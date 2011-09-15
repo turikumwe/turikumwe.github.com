@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        BASIC blog excerpts feed    </title>
+        <link href="blog/excerpts.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2011-09-15T12:32:44Z</updated>
+
+    <id>/blog/excerpts.xml/</id>
+
+            <entry>
+            <title type="html">Getting started with Hyde website</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/angry-post.html"/>
+            <updated>2011-02-01T10:00:00Z</updated>
+            <published>2011-02-01T10:00:00Z</published>
+            <id>/blog/angry-post.html</id>
+                        <category   scheme="/blog/tags"
+                        term="happy"
+                        label="Happy" />
+                        <category   scheme="/blog/tags"
+                        term="thoughts"
+                        label="Thoughts" />
+            
+            <content type="html">
+                &lt;p&gt;&lt;img alt=&#34;getStarted with Hyde&#34; src=&#34;/media/images/airport.png&#34; /&gt;&lt;/p&gt;
+                &lt;p&gt;This step by step tutorials will help you to get started with Hyde Blog. t will also guide when you will be designing your Web pages using some
+content&amp;nbsp;management(&lt;span class=&#34;caps&#34;&gt;CMS&lt;/span&gt;).&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Getting started with GitHub</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/gitHub.html"/>
+            <updated>2011-02-01T10:00:00Z</updated>
+            <published>2011-02-01T10:00:00Z</published>
+            <id>/blog/gitHub.html</id>
+                        <category   scheme="/blog/tags"
+                        term="happy"
+                        label="Happy" />
+                        <category   scheme="/blog/tags"
+                        term="thoughts"
+                        label="Thoughts" />
+            
+            <content type="html">
+                &lt;p&gt;&lt;img alt=&#34;Gitub&#34; src=&#34;/media/images/GitHub.png&#34; /&gt;&lt;/p&gt;
+                &lt;p&gt;GitHub is a web-based hosting service for software development projects that use the Git revision control system, for any one who is working on a software project, i am encouraging you to use this version control system because it will help you to maintain your codes. It is the most popular, secure and easy to use.
+Let&amp;#8217;s follow the instruction tu set up your first github repository and start using&amp;nbsp;it.&lt;/p&gt;            </content>
+        </entry>
+    </feed>

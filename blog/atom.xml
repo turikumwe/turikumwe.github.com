@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        BASIC blog full text feed    </title>
+        <link href="blog/atom.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2011-09-15T12:32:43Z</updated>
+
+    <id>/blog/atom.xml/</id>
+
+            <entry>
+            <title type="html">Getting started with Hyde website</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/angry-post.html"/>
+            <updated>2011-02-01T10:00:00Z</updated>
+            <published>2011-02-01T10:00:00Z</published>
+            <id>/blog/angry-post.html</id>
+                        <category   scheme="/blog/tags"
+                        term="happy"
+                        label="Happy" />
+                        <category   scheme="/blog/tags"
+                        term="thoughts"
+                        label="Thoughts" />
+            
+            <content type="html">
+                                &lt;p&gt;&lt;img alt=&#34;getStarted with Hyde&#34; src=&#34;/media/images/airport.png&#34; /&gt;
+&lt;body&gt;&lt;/p&gt;
+&lt;p&gt;This step by step tutorials will help you to get started with Hyde Blog. t will also guide when you will be designing your Web pages using some
+content management(&lt;span class=&#34;caps&#34;&gt;CMS&lt;/span&gt;).
+&lt;h1&gt; Contents &lt;/h1&gt;
+1. Installing &lt;span class=&#34;caps&#34;&gt;PIP&lt;/span&gt;&lt;br /&gt;
+2. Installing Hyde&lt;br /&gt;
+3. Generating your default website&lt;br /&gt;
+4. Publish Your Website&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt; 1.Installing&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;PIP&lt;/span&gt; &lt;/h2&gt;
+
+&lt;p&gt;&lt;br /&gt;
+pip is a tool for installing and managing Python packages, such as those found in the Python Package Index. Once you have successfuly installed pip then you can use &lt;div class=&#34;codebox&#34;&gt;pip install SomePackage&lt;/div&gt; to install Python packages.
+On your command line type: &lt;br /&gt;
+&lt;div class=&#34;codebox&#34;&gt;$ easy_install pip&lt;/div&gt;&lt;/p&gt;
+&lt;h2&gt; 2.Installing&amp;nbsp;Hyde &lt;/h2&gt;&lt;br /&gt;
+Installing Hide requires only a single command if &lt;span class=&#34;caps&#34;&gt;PIP&lt;/span&gt; is installed&lt;br /&gt;
+&lt;div class=&#34;codebox&#34;&gt;$ pip install hyde&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;
+This command will download and setup your Hyde static website generator engine for You.&lt;br /&gt;
+&lt;h2&gt; 3.Generating your Hyde&amp;nbsp;website  &lt;/h2&gt;&lt;br /&gt;
+To generate your first website a few steps are required.&lt;br /&gt;
+&lt;h2&gt; 3.1 The create&amp;nbsp;command  &lt;/h2&gt;&lt;br /&gt;
+To create a new website your must issue the following command:&lt;br /&gt;
+&lt;div class=&#34;codebox&#34;&gt;$ hyde create&lt;/div&gt;
+&lt;p&gt;Note that this command will create the website in the working direcory! otherwise you will have to specify the directory in your commannd.
+&lt;h2&gt; 3.2 The generate&amp;nbsp;command&lt;/h2&gt;
+&lt;p&gt;To generate your site you&amp;#8217;ll have to issue the following command. Note that generate will make your created website ready to be deployed.&lt;br /&gt;
+&lt;div class=&#34;codebox&#34;&gt;$ hyde gen&lt;/div&gt;
+&lt;h2&gt; 3.3 The serve&amp;nbsp;command&lt;/h2&gt;
+&lt;p&gt;Starts the built in web server that also regenerates based on the request if there are changes. This command also start the Hyde built in web&amp;nbsp;server.&lt;/p&gt;
+&lt;div class=&#34;codebox&#34;&gt;
+  $ hyde serve
+&lt;/div&gt;
+&lt;p&gt;If the out put of this command are like this, You are done with your new Hyde website. Open your browser and the the provided &lt;span class=&#34;caps&#34;&gt;URL&lt;/span&gt;(Ex: http://localhost:8080) for our&amp;nbsp;case:&lt;/p&gt;
+&lt;div class=&#34;output&#34;&gt;
+  &lt;p&gt; 23:44:05 hyde.engine Reading site configuration from [/Users/nyaruka/t/site.yaml]&lt;br /&gt;
+23:44:06 hyde Starting webserver at&amp;nbsp;[localhost]:[8080]&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2&gt; 4. Publishing Your Website on&amp;nbsp;gitHub.com&lt;/h2&gt;
+
+&lt;p&gt;Once you have found that your site is done and running properly on your localhost, then you can upload it to the gitahub sever. Before publishing you should make change to the configuration file of your site by including the publisher, the path and the url. By default your configuration file is site.ymal in your site directory. Open it in your editor or use emacs and add the following lines&amp;nbsp;at:&lt;/p&gt;
+
+&lt;div class=&#34;output&#34;&gt;
+  &lt;pre&gt;publisher:&lt;br /&gt;        github:&lt;br /&gt;            type: hyde.ext.publishers.dvcs.Git&lt;br /&gt;            path: ../your_username.github.com&lt;br /&gt;            url: git@github.com:your_username/your_username.github.com.git
+&lt;/pre&gt;
+&lt;/div&gt;
+After you done this issue the following command to pupblish your website on gitHub.com:
+&lt;div class=&#34;codebox&#34;&gt;
+  $ hyde publish -p github
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/body&gt;
+&lt;/html&gt;&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Getting started with GitHub</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/gitHub.html"/>
+            <updated>2011-02-01T10:00:00Z</updated>
+            <published>2011-02-01T10:00:00Z</published>
+            <id>/blog/gitHub.html</id>
+                        <category   scheme="/blog/tags"
+                        term="happy"
+                        label="Happy" />
+                        <category   scheme="/blog/tags"
+                        term="thoughts"
+                        label="Thoughts" />
+            
+            <content type="html">
+                                &lt;p&gt;&lt;img alt=&#34;Gitub&#34; src=&#34;/media/images/GitHub.png&#34; /&gt;&lt;h1&gt; Introducing&amp;nbsp;Github&lt;/h1&gt;
+        GitHub is a web-based hosting service for software development projects that use the Git revision control system, for any one who is working on a software project, i am encouraging you to use this version control system because it will help you to maintain your codes. It is the most popular, secure and easy to use.
+Let&amp;#8217;s follow the instruction tu set up your first github repository and start using it.&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt;Activities:&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; Creating your github account&lt;br /&gt;
+&lt;strong&gt;2.&lt;/strong&gt; Setting up Git&lt;br /&gt;
+&lt;strong&gt;3.&lt;/strong&gt; Creating your repository on www.github.com&lt;br /&gt;
+&lt;strong&gt;4.&lt;/strong&gt; uploading your files.&lt;br /&gt;&lt;/p&gt;
+&lt;h1&gt;1. Creating your github&amp;nbsp;account&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;1.1&lt;/strong&gt; Open your browser and logon &lt;a href=&#34;https://github.com/&#34;&gt;https://github.com/&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;1.2&lt;/strong&gt; choose Signup and choose create a free account.&lt;br /&gt;
+&lt;strong&gt;1.3&lt;/strong&gt; Provide all the required information and click create an account&lt;br /&gt;
+&lt;strong&gt;1.3&lt;/strong&gt; You are done with the account creation.&lt;br /&gt;&lt;/p&gt;
+&lt;h1&gt;2. Setting up&amp;nbsp;Git&lt;/h1&gt;
+
+&lt;p&gt;Setting Git on your system, involves the following steps:&lt;br /&gt;&lt;br /&gt;
+
+&lt;strong&gt;2.1&lt;/strong&gt;. Download and Install Git&lt;br /&gt;
+At the heart of GitHub is an open source version control system (&lt;span class=&#34;caps&#34;&gt;VCS&lt;/span&gt;) called Git. Created by the same dudes that created Linux, Git is responsible for everything GitHub related that happens locally on your computer. you can read more about Git on&lt;a href=&#34;http://progit.org/book/ch1-3.html&#34;&gt; Git details&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;2.1&lt;/strong&gt; Download and Install The latest version from here&lt;a href=&#34;http://git-scm.com/&#34;&gt; here&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;
+
+&lt;strong&gt;Next: Set up your &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; Keys&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
+  We use &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; keys to establish a secure connection between your computer and GitHub. Setting them up is fairly easy, but does involve a number of steps.&lt;br /&gt;&lt;br /&gt;
+
+&lt;strong&gt;2.2&lt;/strong&gt; Open your terminal&lt;br /&gt;
+  to check whether there are already an &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; directory you will need to use this codebox:&lt;br /&gt;&lt;br /&gt;
+&lt;div class=&#34;codebox&#34;&gt;$ cd ~/.ssh&lt;/div&gt; (Assume that you are in your home directory, if not so use &lt;span class=&#34;codebox&#34;&gt;$ cd ~/ &lt;/span&gt;to go in your home directory)&lt;br /&gt;
+  if it says&amp;#8220;No such file or directory&amp;#8220; you will continue, otherwise follow this instruction to backup the existing ssh keys.&lt;br /&gt;
+  To backup: &lt;div class=&#34;codebox&#34;&gt;$ ls&lt;/div&gt;&lt;br /&gt;
+  Config id_rsa id_rsa.pub known_host&lt;br /&gt;
+  &lt;div class=&#34;codebox&#34;&gt;$ cp id_rsa* key_backup&lt;br /&gt;
+  $ rm id_rsa*&lt;br /&gt;&lt;/div&gt;&lt;br /&gt;
+
+&lt;strong&gt;3.3&lt;/strong&gt; Generate your new &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; Keys&lt;br /&gt;&lt;br /&gt;
+  To generate a new &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; key, enter the code below. We want the default settings so when asked to enter a file in which to save the key, just press enter.&lt;br /&gt;
+&lt;div class=&#34;codebox&#34;&gt;$ ssh-keygen -t rsa -C &amp;#8220;your_email@yourdomain.com&amp;#8220; &lt;/div&gt;
+  &lt;br /&gt;
+  The output will look like this:&lt;div class=&#34;codebox&#34;&gt;Generating public/private rsa key pair.&lt;br /&gt;
+  Enter file in which to save the key&lt;br /&gt;
+  (/User /your_user_directory/.ssh/id_rsa): &lt;/div&gt;
+  &lt;p&gt;press enter to continue&lt;br /&gt;&lt;br /&gt;
+
+You will be asked to put your passPhrase(It is like password but use a phrase to maximize the its security).&lt;br /&gt;
+  Enter passphrase twise or leave leave it empty(Think about the risk of having no password!)&lt;br /&gt;&lt;br /&gt;
+
+&lt;strong&gt;2.4&lt;/strong&gt; &lt;strong&gt;Add your &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; key to gitHub.&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
+  On the GitHub site Click&amp;#8220;Account Settings&amp;#8220;  &amp;gt; &amp;#8220;&lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; Public Keys&amp;#8220;  &amp;gt; &amp;#8220;Add another public key&amp;#8220;&lt;br /&gt;
+
+Open the id_rsa.pub file with a text editor (Notepad, TextEdit, or gedit will do just fine). This is your public &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; key. You may need turn on “view hidden files” to find it because the .ssh directory is hidden. It’s important you copy your &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt; key exactly as it is written without adding any newlines or whitespace.&lt;br /&gt;&lt;br /&gt;
+  or use the following codebox to unhide the hidden file:&lt;br /&gt;
+  &lt;/p&gt;
+&lt;div class=&#34;codebox&#34;&gt;$ defaults write com.apple.Finder AppleShowAllFiles &lt;span class=&#34;caps&#34;&gt;TRUE&lt;/span&gt;&lt;/div&gt;&lt;br /&gt;
+  Relaunch the finder and you will able to view the file.&lt;br /&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;div class=&#34;codebox&#34;&gt;$ defaults write com.apple.Finder AppleShowAllFiles &lt;span class=&#34;caps&#34;&gt;FALSE&lt;/span&gt;&lt;/div&gt;&lt;br /&gt;
+
+&lt;p&gt;Copy the whole its contents and paste in the provided field on GitHub website and provide any name, then click Add key.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Test every thing by typing this codebox: &lt;div class=&#34;codebox&#34;&gt;$ ssh -T git@github.com &lt;/div&gt;&lt;br /&gt;
+  then gitHub will tell you your authentication status, if it is successful you are done with your &lt;span class=&#34;caps&#34;&gt;SSH&lt;/span&gt;&amp;nbsp;Keys.
+  &lt;/p&gt;
+&lt;h1&gt;3. Creating your repository on&amp;nbsp;www.github.com&lt;/h1&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.1&lt;/strong&gt; Login to your www.github.com account&lt;br/&gt;
+&lt;strong&gt;3.2&lt;/strong&gt; Click New Repository.&lt;br /&gt;
+&lt;strong&gt;3.3&lt;/strong&gt; for the project name you can type your username anc choose create Repository. Note that the description and the homepage &lt;span class=&#34;caps&#34;&gt;URL&lt;/span&gt; are optional.&lt;br /&gt;
+&lt;strong&gt;3.4&lt;/strong&gt; After creating this repository, you&amp;#8217;ll be redirected to the page that will help you to get started&lt;br /&gt;&lt;/p&gt;
+&lt;h1&gt;4. Creating and uploading your&amp;nbsp;files.&lt;/h1&gt;
+
+&lt;h2&gt;Global&amp;nbsp;setup:&lt;/h2&gt;
+
+&lt;p&gt;On your terminal:&lt;br /&gt;
+&lt;div class=&#34;codebox&#34;&gt;$ git config &amp;#8212;global user.name &amp;#8220;Your Name&amp;#8220;&lt;br /&gt;
+$ git config &amp;#8212;global user.email srkh@yahoo.com&lt;/div&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt;Global&amp;nbsp;setup:&lt;/h2&gt;
+
+&lt;br /&gt;
+
+&lt;p&gt;issue the following codebox to create directory which you will use with your GitHub files:&lt;br /&gt;
+&lt;div class=&#34;codebox&#34;&gt;$ mkdir Your_direcory_name&lt;br /&gt;
+$ cd Your_direcory_name&lt;br /&gt;
+$ git init&lt;br /&gt;
+$ touch &lt;span class=&#34;caps&#34;&gt;README&lt;/span&gt;&lt;br /&gt;
+$ git add &lt;span class=&#34;caps&#34;&gt;README&lt;/span&gt;&lt;br /&gt;
+$ git commit -m &amp;#8216;first commit&amp;#8217;&lt;br /&gt;
+$ git remote add origin git@github.com:your_github_user_name/your_github_user_name.git&lt;br /&gt;
+$ git push -u origin master&lt;/div&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt;File to&amp;nbsp;upload&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;4.1&lt;/strong&gt; in the created directory on (mkdir Your_direcory_name) step, create your first file called index.html and put some contents&lt;br /&gt;
+Issue the following codebox to check available files:&lt;br /&gt;
+&lt;div class=&#34;codebox&#34;&gt;$ ls&lt;/div&gt;
+Issue the following codebox to check available files to commit: This will display the uncommitted files&lt;br /&gt;
+&lt;div class=&#34;codebox&#34;&gt;$ git status&lt;/div&gt;
+Issue the following codebox to add files to be committed:&lt;br /&gt;
+&lt;div class=&#34;codebox&#34;&gt;$ git add index.html&lt;/div&gt;
+Issue the following codebox to commit your files:&lt;br /&gt;
+&lt;div class=&#34;codebox&#34;&gt;$ git commit -m &amp;#8220;Type your comments&amp;#8220;&lt;/div&gt;
+The last step is to Issue the following codebox to push on gitHub server&lt;br /&gt;
+&lt;div class=&#34;codebox&#34;&gt;$ git push&lt;/div&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt;If those steps are successful, then you can browse your files using the following&amp;nbsp;directory&lt;/h2&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;a href=&#34;http://github.com&#34;&gt;your_username.gitHub.com&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;            </content>
+        </entry>
+    </feed>

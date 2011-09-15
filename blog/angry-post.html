@@ -1,0 +1,199 @@
+<!doctype html>
+<!-- https://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="">
+
+  <!-- encoding must be specified within the first 512 bytes
+        www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset -->
+
+  <!-- meta element for compatibility mode needs to be before
+        all elements except title & meta
+        msdn.microsoft.com/en-us/library/cc288325(VS.85).aspx -->
+  <!-- Chrome Frame is only invoked if meta element for
+        compatibility mode is within the first 1K bytes
+        code.google.com/p/chromium/issues/detail?id=23003 -->
+
+  <title>Getting started with Hyde website</title>
+  <meta name="description" content="Smile. Laugh.
+">
+  <meta name="author" content="Lakshmi Vyasarajan">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="">
+
+    <!-- Place favicon.ico & apple-touch-icon.png
+        in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+    <link rel="stylesheet" href="/media/css/site.css">
+  <link rel="stylesheet" href="/media/css/syntax.css">
+  
+    <!-- All JavaScript at the bottom, except for Modernizr which
+        enables HTML5 elements & feature detects -->
+    <script src="/media/js/libs/modernizr-1.7.min.js"></script>
+    </head>
+<body id="angry-post">
+    <div id="container">
+            <div id="main" role="main">
+          <header class="banner clearfix">
+          <h1>Get Started Now!</h1>
+            <h3>Discover basic Knowladge</h3>                              <nav class=main_nav>
+    <ul>
+                <li>
+            <a title="Home Page"
+                class="button white home"
+                href="/index.html">
+                Home
+            </a>
+        </li>        <li>
+            <a title="Tutorials"
+                class="button white active blog"
+                href="/blog">
+                Tutorials
+            </a>
+        </li>        <li>
+            <a title="About"
+                class="button white about"
+                href="/about.html">
+                About
+            </a>
+        </li>    </ul>
+</nav>
+                    </header>
+          <section class="content">
+          <article class="post">
+<nav class="post_nav">
+<a class="backlink" href="/blog">Back to list</a>
+<a class="prev disabled"
+    title=""
+    >
+    Previous
+</a>
+
+<a class="next"
+    title="Getting started with GitHub"
+        href="/blog/gitHub.html">
+    Next
+</a>
+
+<br>
+<div id="twitter_share">
+<a href="http://twitter.com/share"
+    class="twitter-share-button"
+    data-count="vertical"
+    data-via="ringce">Tweet</a>
+    <script type="text/javascript"
+        src="http://platform.twitter.com/widgets.js"></script>
+</div>
+<div id="facebook_like">
+<iframe src="http://www.facebook.com/plugins/like.php?href&amp;layout=box_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=65"
+            scrolling="no"
+            frameborder="0"
+            style="border:none; overflow:hidden; width:450px; height:65px;"
+            allowTransparency="true"></iframe>
+</div>
+</nav>
+<h1 class="title">
+    <a href="/blog/angry-post.html">
+        Getting started with Hyde website
+    </a>
+</h1>
+<time datetime="2011-02-01">
+    Posted: Tue, 01 Feb 2011
+</time>
+
+<ul class="tags clear">
+<li>
+    <a class="small" href="/blog/tags/happy.html">
+        happy
+    </a>
+</li>
+<li>
+    <a class="small" href="/blog/tags/thoughts.html">
+        thoughts
+    </a>
+</li>
+</ul>
+<p><img alt="getStarted with Hyde" src="/media/images/airport.png" />
+<body></p>
+<p>This step by step tutorials will help you to get started with Hyde Blog. t will also guide when you will be designing your Web pages using some
+content management(<span class="caps">CMS</span>).
+<h1> Contents </h1>
+1. Installing <span class="caps">PIP</span><br />
+2. Installing Hyde<br />
+3. Generating your default website<br />
+4. Publish Your Website<br /></p>
+<h2> 1.Installing&nbsp;<span class="caps">PIP</span> </h2>
+
+<p><br />
+pip is a tool for installing and managing Python packages, such as those found in the Python Package Index. Once you have successfuly installed pip then you can use <div class="codebox">pip install SomePackage</div> to install Python packages.
+On your command line type: <br />
+<div class="codebox">$ easy_install pip</div></p>
+<h2> 2.Installing&nbsp;Hyde </h2><br />
+Installing Hide requires only a single command if <span class="caps">PIP</span> is installed<br />
+<div class="codebox">$ pip install hyde</div><br /><br />
+This command will download and setup your Hyde static website generator engine for You.<br />
+<h2> 3.Generating your Hyde&nbsp;website  </h2><br />
+To generate your first website a few steps are required.<br />
+<h2> 3.1 The create&nbsp;command  </h2><br />
+To create a new website your must issue the following command:<br />
+<div class="codebox">$ hyde create</div>
+<p>Note that this command will create the website in the working direcory! otherwise you will have to specify the directory in your commannd.
+<h2> 3.2 The generate&nbsp;command</h2>
+<p>To generate your site you&#8217;ll have to issue the following command. Note that generate will make your created website ready to be deployed.<br />
+<div class="codebox">$ hyde gen</div>
+<h2> 3.3 The serve&nbsp;command</h2>
+<p>Starts the built in web server that also regenerates based on the request if there are changes. This command also start the Hyde built in web&nbsp;server.</p>
+<div class="codebox">
+  $ hyde serve
+</div>
+<p>If the out put of this command are like this, You are done with your new Hyde website. Open your browser and the the provided <span class="caps">URL</span>(Ex: http://localhost:8080) for our&nbsp;case:</p>
+<div class="output">
+  <p> 23:44:05 hyde.engine Reading site configuration from [/Users/nyaruka/t/site.yaml]<br />
+23:44:06 hyde Starting webserver at&nbsp;[localhost]:[8080]</p>
+</div>
+<h2> 4. Publishing Your Website on&nbsp;gitHub.com</h2>
+
+<p>Once you have found that your site is done and running properly on your localhost, then you can upload it to the gitahub sever. Before publishing you should make change to the configuration file of your site by including the publisher, the path and the url. By default your configuration file is site.ymal in your site directory. Open it in your editor or use emacs and add the following lines&nbsp;at:</p>
+
+<div class="output">
+  <pre>publisher:<br />        github:<br />            type: hyde.ext.publishers.dvcs.Git<br />            path: ../your_username.github.com<br />            url: git@github.com:your_username/your_username.github.com.git
+</pre>
+</div>
+After you done this issue the following command to pupblish your website on gitHub.com:
+<div class="codebox">
+  $ hyde publish -p github
+</div>
+
+<p></body>
+</html></p></article>          </section>
+      </div>
+      </div> <!--! end of #container -->
+  <footer>
+      Powered by <a href="http://ringce.com/hyde">hyde</a>.
+  </footer>
+      <!-- Javascript at the bottom for fast page loading -->
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+  
+    
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+      
+  </body>
+</html>
